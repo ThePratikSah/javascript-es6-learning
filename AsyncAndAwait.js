@@ -11,6 +11,7 @@
 async function getUser(name) {
   const res = await fetch(`https://api.github.com/users/${name}`);
   const data = res.json();
+  console.log(data);
   return data;
 }
 
